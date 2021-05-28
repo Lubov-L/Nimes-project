@@ -1,14 +1,11 @@
 @media ( max-width: 1200px ) and (min-width: 992px)
   .container
     max-width: 900px
-
   .intro-wrapper
     padding: 0 80px
-
   .bestsellers
     &__card
       max-width: 210px
-
   .news
     &__bg
       width: 60%
@@ -19,357 +16,156 @@
       margin: 0
       padding: 30px 47px 50px 40px
 
-  .shop
-    &__img
-      width: 100%
-
-  .intro
-    width: 100%
-
-  .catalog
-    &__grid
-      grid-template-columns: repeat(3, 1fr)
-    &__filter
-      width: 100%
-      &-by
-        margin-right: 120px
-
-  #catalog
-    width: 100%
-
-  section
-    margin: 0 auto
-    min-width: 900px
-
-  .user
-    width: 100%
-    padding: 20px
-    grid-column-gap: 0
-    grid-row-gap: 0
-
-    &__grid
-      &-1,
-      &-2,
-      &-3
-        min-width: 50%
-        padding: 0
-
-      &-1
-        justify-content: flex-start
-
-      &-2
-        &-profile
-          padding: 15px
-
-    &__page
-      &__history
-        padding: 0
-
-  #your__profile
-    margin: 0 auto
-
-  select,
-  #country,
-  #profile__name,
-  #profile__surname,
-  #profile__birthday,
-  #profile__gender,
-  #profile__city,
-  #profile__mail,
-  #profile__phone,
-  #contact__input-1,
-  #contact__input-2,
-  #contact__input-3
-    min-width: 300px
-
-  #profile
-    &__self
-      min-width: 440px
-
-  .yourself
-    display: flex
-    flex-direction: column
-    justify-content: center
-    margin: 0 auto
-    padding-top: 30px
-
-  .profile,
-  .form,
-  .user__city,
-  .user__country,
-  .user__gender
-    min-width: 420px
-    margin: 0 auto
-    padding-top: 20px
-
-  .contact
-    &__section,
-    &__block
-      min-width: 900px
-      margin: 0 auto
-      padding-right: 0
-
-@media (max-width: 992px) and (min-width: 768px)
-
+@media (max-width: 991px) and (min-width: 768px)
   .container
-    width: 100%
-
+    width: 90%
+  .section-header
+    margin-top: 60px
   .intro
-    &__catalog
-      width: 100%
-
-  .catalog
-    &__grid
-      grid-template-columns: repeat(2, 1fr)
-    &__filter
-      width: 100%
-      &-by
-        margin-right: 120px
-
-  .user
-    width: 100%
-    padding: 20px
-    grid-column-gap: 0
-    grid-row-gap: 0
-
-    &__grid
-      &-1,
-      &-2,
-      &-3
-        min-width: 50%
-        padding: 0
-
-      &-2
-        &-profile
-          padding: 20px
-
-    &__gender
-      margin: 0 auto
-
-    &__page
-
-      &__photo
-        &-1
-          width: 85%
-
-      &__history
-        padding: 0
-
-  table
-    border-spacing: 13px 31px
-
-  select,
-  #country,
-  #profile__name,
-  #profile__surname,
-  #profile__birthday,
-  #profile__gender,
-  #profile__city,
-  #profile__mail,
-  #profile__phone,
-  #contact__input-1,
-  #contact__input-2,
-  #contact__input-3
-    min-width: 320px
-    margin-bottom: 25px
-
-  #your__profile,
-  #profile__self
-    min-width: 50%
-
-  h2,
-  .profile,
-  .form,
-  .user__city,
-  .user__country
-    display: flex
-    flex-direction: column
-    min-width: 50%
-    margin: 0 auto
-
-  .yourself
-    display: flex
-    flex-direction: column
-    justify-content: center
-    margin: 0 auto
-
-  .contact
-    &__section,
-    &__block
-      min-width: 750px
-      margin: 0 auto
-      padding-right: 0
-
-@media (max-width: 768px) and (min-width: 480px)
-
-  .header
-    padding-left: 10px
-
-  .user
-    display: flex
-    flex-direction: column
-    width: 100%
-
-    &__gender
-      margin: 0 auto
-
-    &__page
-      &__history
-        width: 100%
-
-    &__grid
-      &-1
-        padding: 20px
-
-      &-2
-        min-width: 400px
-
-        &-profile
-          padding: 63px 20px 68px 20px
-
-    &-features
-      margin: 0 15px 0 0
-
-  .nav__list
-    width: 150px
-
-  .logo
-    margin-left: 50px
-
-  .container
-    width: 100%
-
-  .intro
-    width: 100%
-
+    padding: 25px 0
     &-wrapper
-      padding: 25px
-      display: flex
-      flex-direction: column-reverse
-      justify-content: center
-
-    &__description
-      margin-top: 50px
-
+      padding: 0
     &__img
-      width: 70%
-
+      width: 350px
     &__image
-      display: flex
-      justify-content: center
+      &-1
+        top: -25px
+        left: -25px
+      &-2
+        bottom: -25px
+        right: -25px
+  .content-wrapper
+    flex-wrap: wrap
+  .bestsellers
+    &__card
+      width: 350px
+      margin-bottom: 20px
+    &__header
+      margin-top: 90px
+  .news
+    &__bg
+      margin-bottom: 0
+      width: 100%
+    &__card
+      margin: 0
+  .shop
+    &__wrapper
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: min-content
+      &__img
+        width: 100%
+  .jackets
+    &-bg
+      grid-row: 3
+    &-title
+      grid-row: 4
+  .overalls
+    &-bg
+      grid-row: 3
+    &-title
+      grid-row: 4
+  .category-title
+    margin-bottom: 30px
+    display: block
 
+@media (max-width: 767px)
+  .container
+    width: 95%
+  .section-header
+    margin-top: 60px
+  .intro
+    padding: 25px 0
+    &-wrapper
+      padding: 0
+    &__image
+      display: none
+  .content-wrapper
+    flex-wrap: wrap
+  .bestsellers
+    &__card
+      width: 350px
+      margin-bottom: 20px
+    &__header
+      margin-top: 90px
+  .news
+    &__bg
+      margin-bottom: 0
+      width: 100%
+    &__card
+      margin: 0
+  .shop
+    &__wrapper
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: min-content
+      &__img
+        width: 100%
+  .jackets
+    &-bg
+      grid-row: 3
+    &-title
+      grid-row: 4
+  .overalls
+    &-bg
+      grid-row: 3
+    &-title
+      grid-row: 4
+  .category-title
+    margin-bottom: 30px
+    display: block
+
+@media (max-width: 480px)
+  .container
+    width: 95%
+  .section-header
+    margin-top: 60px
+  .intro
+    padding: 25px 0
+    &-wrapper
+      padding: 0
+    &__img
+      display: none
+    &__image
       &-1,
       &-2
-        width: 40%
-        margin: 25px
-
-    &__entry
-      margin: 0
-
-      &__catalog
-        flex-wrap: wrap
-
-    &__categories
-
-      &__logo
-        margin: 0 150px 0 0
-        width: 50%
-
-    &__catalog
-      width: 100%
-
-  .shop
-
-    &__wrapper
-      display: flex
-      flex-direction: column
-      justify-content: center
-      padding: 30px 30px 40px 30px
-
-    &__wrapper-b
-      display: flex
-      flex-direction: column
-      margin: 0 auto
-      width: 65%
-
-  .content
-
-    &-wrapper
-      flex-wrap: wrap
-      justify-content: center
-      padding: 15px 15px 0 15px
-
-  .section
-
-    &-header
-      width: 100%
-      padding: 0 25px 0 25px
-
-  .news
-
-    &__bg
-      width: 95%
-
-  .catalog
-    width: 100%
-    padding-left: 10px
-
-    &__grid
-      grid-template-columns: repeat(2, 1fr)
-      grid-gap: 0px
-      width: 100%
-
-      &__item
-        width: 80%
-
-    &__filter
-      width: 100%
-
-      &-by
-        margin-right: 120px
-
-  .yourself,
-  .profile,
-  .form,
-  .user__city,
-  .user__country
-    display: flex
-    flex-direction: column
+        display: none
+  .content-wrapper
+    flex-wrap: wrap
     justify-content: center
-    min-width: 400px
-    margin: 0 auto
-
-  h2
-    margin: 0 auto
-
-  .footer
-
-    &__container
-      padding: 40px 20px 0px 20px
-
-  .contact
-    &__section,
-    &__block,
-      min-width: 480px
-      margin: 0 auto
-      padding-right: 0
-
-    &__form
-      width: 450px
-
-    &__input
-      display: flex
-      flex-direction: column
-      min-width: 430px
-      margin: 28px 0 0 0
-
-  #profile__self
-    min-width: 400px
-
-  fieldset
-    width: 100%
-    padding: 0
-    margin: 0 auto
-
-  label
-    margin-top: 25px
+    padding-top: 40px
+  .bestsellers
+    &__card
+      width: 350px
+      margin-bottom: 20px
+    &__header
+      margin-top: 40px
+  .news
+    &__bg
+      display: none
+    &__card
+      margin: 0
+  .shop
+    &__wrapper
+      grid-template-columns: 1fr
+      grid-template-rows: min-content
+      &__img
+        width: 100%
+  .jeans-title
+    grid-row: 2px
+  .shirts
+    &-bg
+      grid-row: 3
+    &-title
+      grid-row: 4
+  .jackets
+    &-bg
+      grid-row: 5
+    &-title
+      grid-row: 6
+  .overalls
+    &-bg
+      grid-row: 7
+    &-title
+      grid-row: 8
+  .category-title
+    margin-bottom: 30px
+    display: block

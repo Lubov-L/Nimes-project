@@ -12,7 +12,7 @@
 			href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+		<script src="./main.js" defer></script>
 	</head>
 	<body>
 		<header class="header">
@@ -31,12 +31,10 @@
 					</ul>
 				</div>
 				<div class="logo">
-					<a href="./index.html">
-						<img src="./img/logo.png" alt="Logo Mines" class="logo__img" />
-					</a>
+					<img src="./img/logo.png" alt="Logo Mines" class="logo__img" />
 				</div>
 				<div class="user-features">
-					<a href="./user.html" class="link" id="user">User</a>
+					<a href="#" class="link user_login">User</a>
 					<a href="#"
 						><img src="./img/search.svg" alt="Search" class="search"
 					/></a>
@@ -144,52 +142,44 @@
 					<a href="#" class="section-link link">View all</a>
 				</div>
 				<div class="shop__wrapper">
-					<div class="shop__wrapper-b">
-						<img
-							src="./img/category_jeans.jpg"
-							alt="Jeans"
-							class="shop__img jeans-bg"
-						/>
-						<a href="#" class="link">
-							<span class="category-title jeans-title">Jeans</span>
-						</a>
-					</div>
-					<div class="shop__wrapper-b">
-						<img
-							src="./img/category_shirts.jpg"
-							alt="Shirts"
-							class="shop__img shirts-bg"
-						/>
-						<a href="#" class="link">
-							<span class="category-title shirts-title">Shirts</span>
-						</a>
-					</div>
-					<div class="shop__wrapper-b">
-						<img
-							src="./img/category_jackets.jpg"
-							alt="Jackets"
-							class="shop__img jackets-bg"
-						/>
-						<a href="./catalog.html" class="link">
-							<span class="category-title jackets-title">Jackets</span>
-						</a>
-					</div>
-					<div class="shop__wrapper-b">
-						<img
-							src="./img/category_overalls.jpg"
-							alt="Overalls"
-							class="shop__img overalls-bg"
-						/>
-						<a href="#" class="link">
-							<span class="category-title overalls-title">Overalls</span>
-						</a>
-					</div>
+					<img
+						src="./img/category_jeans.jpg"
+						alt="Jeans"
+						class="shop__img jeans-bg"
+					/>
+					<img
+						src="./img/category_shirts.jpg"
+						alt="Shirts"
+						class="shop__img shirts-bg"
+					/>
+					<img
+						src="./img/category_jackets.jpg"
+						alt="Jackets"
+						class="shop__img jackets-bg"
+					/>
+					<img
+						src="./img/category_overalls.jpg"
+						alt="Overalls"
+						class="shop__img overalls-bg"
+					/>
+					<a href="#" class="link">
+						<span class="category-title jeans-title">Jeans</span>
+					</a>
+					<a href="#" class="link">
+						<span class="category-title shirts-title">Shirts</span>
+					</a>
+					<a href="#" class="link">
+						<span class="category-title jackets-title">Jackets</span>
+					</a>
+					<a href="#" class="link">
+						<span class="category-title overalls-title">Overalls</span>
+					</a>
 				</div>
 			</div>
 		</section>
 		<footer class="footer">
 			<div class="container footer__container">
-				<a href="./index.html" class="logo-link link"
+				<a href="index.html" class="logo-link link"
 					><img src="./img/logo_white.png" alt="Start page Nimes"
 				/></a>
 				<ul class="nav footer__list">
@@ -206,46 +196,57 @@
 						<a href="#" class="footer__link link">Sitemap</a>
 					</li>
 					<li class="nav__item footer__item">
-						<a href="./contacts.html" class="footer__link link" target="_blank"
-							>Contacts</a
-						>
+						<a href="#" class="footer__link link">Contacts</a>
 					</li>
 				</ul>
 				<ul class="nav social">
 					<li class="nav__item social__item">
-						<a
-							href="https://ru-ru.facebook.com"
-							class="social__link"
-							target="_blank"
+						<a href="https://ru-ru.facebook.com" class="social__link"
 							><img src="./img/fb.svg" alt="Facebook" class="social__logo"
 						/></a>
 					</li>
 					<li class="nav__item social__item">
-						<a
-							href="https://www.instagram.com/"
-							class="social__link"
-							target="_blank"
+						<a href="#" class="social__link"
 							><img src="./img/inst.svg" alt="Instagram" class="social__logo"
 						/></a>
 					</li>
 					<li class="nav__item social__item">
-						<a
-							href="https://www.pinterest.com/"
-							class="social__link"
-							target="_blank"
+						<a href="#" class="social__link"
 							><img src="./img/pint.svg" alt="Pinteres" class="social__logo"
 						/></a>
 					</li>
 					<li class="nav__item social__item">
-						<a
-							href="https://twitter.com/?lang=en"
-							class="social__link"
-							target="_blank"
+						<a href="#" class="social__link"
 							><img src="./img/twitter.svg" alt="Twitter" class="social__logo"
 						/></a>
 					</li>
 				</ul>
 			</div>
 		</footer>
+		<div class="modal_fon hidden"></div>
+		<form action="form.html" class="modal hidden">
+			<button type="button" class="modal_ecs" id="ecs">X</button>
+			<input
+				type="text"
+				class="modal_login"
+				id="modal_text"
+				placeholder="Enter your login"
+			/>
+			<div class="error_log hidden">
+				<p style="margin: 0">More than 6 characters</p>
+			</div>
+			<input
+				type="text"
+				class="modal_password"
+				id="modal_text"
+				placeholder="Enter your password"
+			/>
+			<div class="error_pas hidden">
+				<p style="margin: 0">
+					Use numbers, letters and punctuations, more 6 characters
+				</p>
+			</div>
+			<button type="submit" class="modal_auth">Authorisation</button>
+		</form>
 	</body>
 </html>
