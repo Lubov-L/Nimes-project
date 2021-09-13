@@ -1,13 +1,13 @@
 (function () {
-  const modalButton = document.querySelector(".user_login"),
-    modalWindow = document.querySelector(".modal"),
-    modalFon = document.querySelector(".modal_fon"),
-    escButton = modalWindow.querySelector(".modal_ecs"),
-    loginInput = modalWindow.querySelector(".modal_login"),
-    loginPas = modalWindow.querySelector(".modal_password"),
-    authButton = modalWindow.querySelector(".modal_auth"),
-    errorPas = modalWindow.querySelector(".error_pas"),
-    errorLog = modalWindow.querySelector(".error_log");
+  const modalButton = document.querySelector(".user-login"),
+    modalWindow = document.querySelector(".modal__form"),
+    modalFon = document.querySelector(".modal__fon"),
+    escButton = modalWindow.querySelector(".modal__ecs"),
+    loginInput = modalWindow.querySelector(".modal__login"),
+    loginPas = modalWindow.querySelector(".modal__password"),
+    authButton = modalWindow.querySelector(".modal__auth"),
+    errorPas = modalWindow.querySelector(".modal__error-pas"),
+    errorLog = modalWindow.querySelector(".modal__error-log");
 
   function toggleModal() {
     modalWindow.classList.toggle("hidden");
