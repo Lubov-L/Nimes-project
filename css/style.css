@@ -240,6 +240,9 @@ body {
   color: #ffffff;
   padding: 50px 0;
 }
+.footer__item:last-child {
+  margin-right: 0;
+}
 .footer__list {
   width: 100%;
   display: flex;
@@ -454,11 +457,6 @@ body {
   padding-bottom: 85px;
 }
 .contact__section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 1140px;
-  margin: 0 auto;
   padding-top: 57px;
 }
 .contact__input {
@@ -471,10 +469,6 @@ body {
 }
 
 fieldset {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 568px;
   min-height: 776px;
   border: 3px solid black;
@@ -482,6 +476,7 @@ fieldset {
 
 #fieldset {
   padding: 57px 45px 0 45px;
+  margin: 0 auto;
 }
 
 #message {
@@ -492,8 +487,12 @@ fieldset {
   justify-self: center;
 }
 
+legend {
+  margin-left: 1%;
+}
+
 .user {
-  max-width: 1370px;
+  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -540,10 +539,9 @@ fieldset {
 }
 .user__page__history {
   background-color: #f1f2f4;
-  width: 84%;
+  width: 100%;
   min-height: 600px;
-  padding: 5% 0 0 5%;
-  margin-right: 15%;
+  padding-top: 20px;
 }
 .user__page__data {
   color: #737a82;
@@ -621,6 +619,7 @@ table {
 
 form {
   width: 100%;
+  margin: 0 auto;
 }
 
 .form,
@@ -706,32 +705,10 @@ form {
     padding: 0 20px 0 20px;
   }
 }
-@media screen and (max-width: 1100px) {
-  .form,
-.user__city,
-.user__country {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  input,
-select {
-    width: 100%;
-  }
-
-  .user__page__history {
-    padding: 5% 0 0 0;
-    margin-right: 0;
-  }
-
-  .user__gender {
-    flex-wrap: wrap;
-  }
-}
 @media screen and (max-width: 980px) {
   .user {
-    display: flex;
-    flex-direction: column;
+    padding-bottom: 0;
+    grid-gap: 0;
   }
   .user__grid-3 {
     padding: 0;
@@ -744,6 +721,7 @@ select {
   }
   .user__page__history {
     width: 100%;
+    border-top: 1px solid #757070;
   }
 
   form {
@@ -845,6 +823,10 @@ select {
   .catalog__filter-by {
     width: 180px;
   }
+
+  fieldset {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 600px) {
   .modal__form {
@@ -886,6 +868,26 @@ select {
   .footer__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  fieldset {
+    padding: 57px 45px 0 10px;
+  }
+
+  #fieldset {
+    padding: 0;
+  }
+
+  #profile__self {
+    max-width: 90%;
+  }
+
+  .contact__input {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact__link {
+    margin-left: 20px;
   }
 }
 @media screen and (max-width: 400px) {
