@@ -1,4 +1,4 @@
-### Верстка макета многостраничного сайта + адаптация для всех устройств
+### Layout  of a multi-page website + adaptation for all devices
 
 <img src="https://github.com/Lubov-L/Nimes-project/blob/main/img/Screenshot%202022-10-10%20at%2022.35.57.png" style="width: 400px;">
 
